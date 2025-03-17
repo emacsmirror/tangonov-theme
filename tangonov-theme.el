@@ -8,7 +8,7 @@
 ;; Created: 20th July, 2022
 ;; Keywords: faces, theme, dark, fringe
 ;; Version: 1.5.0
-;; Package-Requires: ((emacs "25"))
+;; Package-Requires: ((emacs "27.1"))
 
 ;; License: GPL3
 
