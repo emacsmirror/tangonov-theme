@@ -248,20 +248,15 @@ Alpha should be a float between 0 and 1."
    `(css-selector ((,spec (:foreground ,blue))))
    `(custom-button
      ((,spec
-       (:foreground ,blue :background ,bg :box '(:line-width 1 :style none)))))
+       (:foreground ,blue :background ,bg :box t))))
    `(custom-button-unraised
-     ((,spec (:foreground ,violet :background
-                          ,bg :box '(:line-width 1 :style none)))))
+     ((,spec (:foreground ,violet :background ,bg :box t))))
    `(custom-button-pressed-unraised
-     ((,spec
-       (:foreground ,bg :background
-                    ,violet :box '(:line-width 1 :style none)))))
+     ((,spec (:foreground ,bg :background ,violet :box t))))
    `(custom-button-pressed
-     ((,spec (:foreground ,bg :background
-                          ,blue :box '(:line-width 1 :style none)))))
+     ((,spec (:foreground ,bg :background ,blue :box t))))
    `(custom-button-mouse
-     ((,spec (:foreground ,bg :background ,blue
-                          :box '(:line-width 1 :style none)))))
+     ((,spec (:foreground ,bg :background ,blue :box 1))))
    `(custom-variable-button ((,spec (:foreground ,green :underline t))))
    `(custom-saved
      ((,spec (:foreground ,green :background
@@ -298,12 +293,9 @@ Alpha should be a float between 0 and 1."
    `(eww-form-file   ((,spec (:inherit 'eww-form-submit :background ,bg-alt))))
    `(eww-form-select ((,spec (:inherit 'eww-form-submit :background ,bg-alt))))
    `(eww-form-submit
-     ((,spec (:inherit 'eww-form-text :box
-                       `(:line-width 2 :style released-button)
-                       :background ,gray1))))
+     ((,spec (:inherit 'eww-form-text :box 1 :background ,gray1))))
    `(eww-form-text
-     ((,spec (:box `(:line-width 1 :color ,gray2)
-                   ,bg :foreground ,fg :distant-foreground ,bg))))
+     ((,spec (:box ,gray2 ,bg :foreground ,fg :distant-foreground ,bg))))
    `(eww-form-textarea ((,spec (:inherit 'eww-form-text))))
    `(eww-invalid-certificate ((,spec (:foreground ,red))))
    `(eww-valid-certificate ((,spec (:foreground ,cyan))))
@@ -837,9 +829,8 @@ Alpha should be a float between 0 and 1."
    `(widget-single-line-field
      ((,spec (:background ,gray2 :distant-foreground ,bg))))
    `(widget-field
-     ((,spec (:background
-              ,gray2 :distant-foreground
-              ,bg :box `(:line-width -1 :color ,grey1) :extend t))))))
+     ((,spec
+       (:background ,gray2 :distant-foreground ,bg :box ,gray2 :extend t))))))
 
 ;;;###autoload
 (when (and (bound-and-true-p custom-theme-load-path)
