@@ -4,7 +4,7 @@
 
 ;; Author: Trevor Richards <trev@trevdev.ca>
 ;; Maintainer: Trevor Richards <trev@trevdev.ca>
-;; URL: https://sr.ht/~trevdev/tangonov-theme/
+;; URL: https://codeberg.org/trevdev/tangonov-theme
 ;; Created: 20th July, 2022
 ;; Keywords: faces, theme, dark, fringe
 ;; Version: 1.5.1
