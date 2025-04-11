@@ -7,7 +7,7 @@
 ;; URL: https://sr.ht/~trevdev/tangonov-theme/
 ;; Created: 20th July, 2022
 ;; Keywords: faces, theme, dark, fringe
-;; Version: 1.5.0
+;; Version: 1.5.1
 ;; Package-Requires: ((emacs "27.1"))
 
 ;; License: GPL3
@@ -242,6 +242,8 @@ Alpha should be a float between 0 and 1."
    `(company-tooltip-scrollbar-thumb ((,spec (:background ,violet))))
    `(company-tooltip-scrollbar-track ((,spec (:background ,bg-alt))))
    `(company-tooltip-selection ((,spec (:inherit bold :background ,gray1))))
+   `(clojure-keyword-face ((,spec (:foreground ,yellow))))
+   `(clojure-ts-keyword-face ((,spec (:foreground ,yellow))))
    `(corfu-current ((,spec (:foreground ,fg :background ,gray1 :weight bold))))
    `(css-proprietary-property ((,spec (:foreground ,orange))))
    `(css-property ((,spec (:foreground ,green))))
@@ -500,6 +502,9 @@ Alpha should be a float between 0 and 1."
    `(font-lock-comment-face ((,spec (:foreground ,gray2))))
    `(font-lock-type-face ((,spec (:foreground ,magenta))))
    `(font-lock-constant-face ((,spec (:foreground ,orange))))
+   `(font-lock-number-face ((,spec (:foreground ,orange))))
+   `(font-lock-escape-face ((,spec (:foreground ,orange :weight bold))))
+   `(font-lock-bracket-face ((,spec (:foreground ,cyan))))
    `(font-lock-builtin-face ((,spec (:foreground ,cyan))))
    `(font-lock-string-face ((,spec (:foreground ,green))))
    `(font-lock-doc-face ((,spec (:foreground ,gray2))))
