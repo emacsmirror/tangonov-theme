@@ -4,7 +4,7 @@
 :PROPERTIES:
 :header-args: :tangle tangonov-theme.el
 :END:
-[[https://melpa.org/#/tangonov-theme][file:https://melpa.org/packages/tangonov-theme-badge.svg]]
+[[https://melpa.org/packages/tangonov-theme-badge.svg]]
 
 [[file:images/tangonov.png]]
 
