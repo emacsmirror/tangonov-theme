@@ -413,8 +413,8 @@ These colors are used by various shell-like packages.
 *** Clojure
 
 #+begin_src elisp
-   `(clojure-keyword-face ((,spec (:foreground ,yellow))))
-   `(clojure-ts-keyword-face ((,spec (:foreground ,yellow))))
+   `(clojure-keyword-face ((,spec (:foreground ,blue))))
+   `(clojure-ts-keyword-face ((,spec (:foreground ,blue))))
 #+end_src
 
 *** Corfu
